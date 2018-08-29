@@ -247,4 +247,3 @@ Fucking losers, life was too big for them to do things with logic.
 
 
 
-# Read this file
