@@ -239,10 +239,6 @@ But this is not your case.
 
 You are respectful with your own apetences. U LIKE IT? Cool! Cause that is the most important of the universe: that you liked it. Is it?
 
-Fucking losers, life was too big for them to do things with logic.
-
-
-
 
 
 
