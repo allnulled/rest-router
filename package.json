@@ -1,0 +1,33 @@
+{
+  "name": "rest-router",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chai": "^4.1.2",
+    "epilogue": "^0.7.1",
+    "express": "^4.16.3",
+    "javadoc": "^1.0.3",
+    "mysql": "^2.16.0",
+    "mysql2": "^1.6.1",
+    "sequelize": "^4.38.0",
+    "sequelize-auto": "^0.4.29"
+  },
+  "devDependencies": {
+    "async": "^2.6.1",
+    "mocha": "^5.2.0",
+    "request": "^2.88.0"
+  },
+  "scripts": {
+    "fix": "node fix.js",
+    "clean": "rimraf models",
+    "docs": "javadoc -i src/rest-router.js -o README.md -f markdown",
+    "test": "mocha test/**/*.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
