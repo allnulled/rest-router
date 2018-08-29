@@ -1,10 +1,11 @@
 {
   "name": "rest-router",
   "version": "1.0.0",
-  "description": "",
+  "description": "RESTRouter can create HTTP REST APIs (for Express apps) from database credentials (using Sequelize ORM), and nothing else.",
   "directories": {
     "test": "test"
   },
+  "main": "src/rest-router.js",
   "dependencies": {
     "body-parser": "^1.18.3",
     "chai": "^4.1.2",
