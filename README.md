@@ -105,7 +105,7 @@ It supports any database supported by
 
 **Parameter:** `{String} password`. Password of the user that is going to connect.
 
-**Parameter:** `{Object} options`. Name of the database to be exposed as REST HTTP API.
+**Parameter:** `{Object} options`. Options passed to the RESTRouter generator. It corresponds to the [`Sequelize-Auto options`](https://github.com/sequelize/sequelize-auto).
 
 **Parameter:** `{Object:Express.Application} app`. ExpressJS application to which add the HTTP calls.
 
@@ -150,9 +150,24 @@ Note: some parameters may be optional, depending on the original methods. This w
 
 **Parameter:** `{Object} options`. **Optional**. Name of the database to be exposed as REST HTTP API.
 
+**Property:** `{String} this.database`
+
+**Property:** `{String} this.user`
+
+**Property:** `{String} this.password`
+
+**Property:** `{Object} this.options`
+
+**Property:** `{Object:SequelizeAuto} this.auto`
+
+**Property:** `{Object:express.Router} this.router`
+
+**Property:** `{Array<Sequelize.Model>} this.resources`
+
 **Return:** `{Object:RESTRouter}`
 
 **Description:** Constructor for the `RESTRouter` class.
+
 
 
 

@@ -101,7 +101,7 @@ class RESTRouter {
    * @parameter `{String} database`. Name of the database to be exposed as REST HTTP API.
    * @parameter `{String} user`. Name of the user that is going to connect.
    * @parameter `{String} password`. Password of the user that is going to connect.
-   * @parameter `{Object} options`. Name of the database to be exposed as REST HTTP API.
+   * @parameter `{Object} options`. Options passed to the RESTRouter generator. It corresponds to the [`Sequelize-Auto options`](https://github.com/sequelize/sequelize-auto).
    * @parameter `{Object:Express.Application} app`. ExpressJS application to which add the HTTP calls.
    * @return `{Object:Promise} promise`. The `Promise++ instance returned by `RESTRouter#createRouter()` method.
    * @description This method instantiates a new RESTRouter, and calls to its method 
@@ -138,8 +138,16 @@ class RESTRouter {
    * @parameter `{String} user`. Name of the user that is going to connect.
    * @parameter `{String} password`. Password of the user that is going to connect.
    * @parameter `{Object} options`. **Optional**. Name of the database to be exposed as REST HTTP API.
+   * @property `{String} this.database`
+   * @property `{String} this.user`
+   * @property `{String} this.password`
+   * @property `{Object} this.options`
+   * @property `{Object:SequelizeAuto} this.auto`
+   * @property `{Object:express.Router} this.router`
+   * @property `{Array<Sequelize.Model>} this.resources`
    * @return `{Object:RESTRouter}`
    * @description Constructor for the `RESTRouter` class.
+   * 
    * 
    */
   constructor(database, user, password, options) {

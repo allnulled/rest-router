@@ -24,7 +24,7 @@
   },
   "scripts": {
     "fix": "node fix.js",
-    "clean": "rimraf models",
+    "clean": "rimraf test/models",
     "docs": "javadoc -i src/rest-router.js -o README.md -f markdown",
     "test": "mocha test/**/*.test.js"
   },
