@@ -1,24 +1,24 @@
  
 
 
-# restrouter
+# super-rest-router
 
 
-RESTRouter can create HTTP REST APIs (for Express apps) from database credentials (using Sequelize ORM), and nothing else.
+SuperRestRouter can create HTTP REST APIs (for Express apps) from database credentials (using Sequelize ORM), and nothing else.
 
-RESTRouter is a small tool to auto-generate REST APIs (for ExpressJS) automatically from databases (supported by Sequelize ORM).
+SuperRestRouter is a small tool to auto-generate REST APIs (for ExpressJS) automatically from databases (supported by Sequelize ORM).
 
 ---
 
 ## 1. Installation
 
-~$ `npm install --save @allnulled/restrouter`
+~$ `npm install --save @allnulled/super-rest-router`
 
 ---
 
 ## 2. Based on...
 
-**RESTRouter** is based on:
+**SuperRestRouter** is based on:
 
  · [Sequelize ORM](https://github.com/sequelize/sequelize): a flexible ORM for Node.js.
 
@@ -34,16 +34,16 @@ This is important to know if you want to have a full knowledge about how this to
 
 ## 3. Usage
 
-### 3.1. Import `RESTRouter` class:
+### 3.1. Import `SuperRestRouter` class:
 
 ```js
-const RESTRouter = require("@allnulled/restrouter").RESTRouter;
+const SuperRestRouter = require("@allnulled/super-rest-router").SuperRestRouter;
 ```
 
-### 3.2. Create a new `RESTRouter` instance, providing the credentials of your database:
+### 3.2. Create a new `SuperRestRouter` instance, providing the credentials of your database:
 
 ```js
-const rest = new RESTRouter("database", "user", "password", { options: true });
+const rest = new SuperRestRouter("database", "user", "password", { options: true });
 ```
 
 ### 3.3. Create a new `Router` (`express.Router`) and use the returned `Promise` to access it:
@@ -77,7 +77,7 @@ Once you set your server/app listening, you can start fetching and updating data
 
 ---
 
-### **`RESTRouter = require("restrouter").RESTRouter`**
+### **`SuperRestRouter = require("super-rest-router").SuperRestRouter`**
 
 
 **Type:** `{Class}`
@@ -95,7 +95,7 @@ It supports any database supported by
 
 ---
 
-### **`RESTRouter.create(String:database, String:user, String:password, Object:options, Object:app)`**
+### **`SuperRestRouter.create(String:database, String:user, String:password, Object:options, Object:app)`**
 
 
 **Type:** `{Function:Static class method}`
@@ -106,25 +106,25 @@ It supports any database supported by
 
 **Parameter:** `{String} password`. Password of the user that is going to connect.
 
-**Parameter:** `{Object} options`. Options passed to the RESTRouter generator. It corresponds to the [`Sequelize-Auto options`](https://github.com/sequelize/sequelize-auto).
+**Parameter:** `{Object} options`. Options passed to the SuperRestRouter generator. It corresponds to the [`Sequelize-Auto options`](https://github.com/sequelize/sequelize-auto).
 
 **Parameter:** `{Object:Express.Application} app`. ExpressJS application to which add the HTTP calls.
 
-**Return:** `{Object:Promise} promise`. The `Promise++ instance returned by `RESTRouter#createRouter()` method.
+**Return:** `{Object:Promise} promise`. The `Promise++ instance returned by `SuperRestRouter#createRouter()` method.
 
-**Description:** This method instantiates a new RESTRouter, and calls to its method 
+**Description:** This method instantiates a new SuperRestRouter, and calls to its method 
 `createRouter()`, returning the `Promise` that this method generates. We can, then, use the callbacks of
 this `Promise` in order to use the generated `Express.Router`. So, in the end, one can use this method to
 abbreviate: 
 
 ```js
-(new RESTRouter("db", "admin", "123456")).createRouter(expressApp);
+(new SuperRestRouter("db", "admin", "123456")).createRouter(expressApp);
 ```
 
 into:
 
 ```js
-RESTRouter.create("db", "admin", "123456", expressApp);
+SuperRestRouter.create("db", "admin", "123456", expressApp);
 ```
 
 Note: some parameters may be optional, depending on the original methods. This will be explained in these other methods.
@@ -138,7 +138,7 @@ Note: some parameters may be optional, depending on the original methods. This w
 
 ---
 
-### **`new RESTRouter(String:database, String:user, String:password, Object:options)`**
+### **`new SuperRestRouter(String:database, String:user, String:password, Object:options)`**
 
 
 **Type:** `{Function:Constructor}`
@@ -165,9 +165,9 @@ Note: some parameters may be optional, depending on the original methods. This w
 
 **Property:** `{Array<Sequelize.Model>} this.resources`
 
-**Return:** `{Object:RESTRouter}`
+**Return:** `{Object:SuperRestRouter}`
 
-**Description:** Constructor for the `RESTRouter` class.
+**Description:** Constructor for the `SuperRestRouter` class.
 
 
 
@@ -178,7 +178,7 @@ Note: some parameters may be optional, depending on the original methods. This w
 
 ---
 
-### **`RESTRouter#createRouter(Object:routerOrApp)`**
+### **`SuperRestRouter#createRouter(Object:routerOrApp)`**
 
 
 **Type:** `{Function:Method}`
@@ -201,7 +201,7 @@ myRestRouter.createRouter()
 
 The `Promise` instance receives an object holding:
  
- · The instance of the RESTRouter.
+ · The instance of the SuperRestRouter.
 
  · The instance of the Express.Router.
 
@@ -229,7 +229,7 @@ endpoints to transform your Sequelize models into a beautiful and handy HTTP RES
 
 ## 5. Conclusion
 
-RESTRouter is a simple tool, composed with a few lines of code, but it can take so much time of your development, that... well, you should better not use it.
+SuperRestRouter is a simple tool, composed with a few lines of code, but it can take so much time of your development, that... well, you should better not use it.
 
 Better for me, of course. Go fuck yourself, bastards.
 
