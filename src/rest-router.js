@@ -53,6 +53,7 @@
  *   .then(function(data) {
  *     const { rest, router, resources } = data;
  *     myExpressApp.use("/my/personal/api/v1", router);
+ *     myExpressApp.listen(8008, () => console.log("Server listening!"));
  *   })
  *   .catch(function(error) {
  *     console.error(error);
@@ -72,7 +73,7 @@
 const express = require("express");
 const Router = express.Router;
 const Sequelize = require("sequelize");
-const SequelizeAuto = require("sequelize-auto");
+const SequelizeAuto = require("sequelize-auto-disconnectable");
 const epilogue = require("epilogue");
 
 /**

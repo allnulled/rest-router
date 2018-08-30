@@ -2,12 +2,15 @@ const { expect, assert } = require("chai");
 const async = require("async");
 const request = require("request");
 const http = require("http");
+const rimraf = require("rimraf");
 const input = {};
 input.DATABASE = "newdb";
 input.USER = "root";
 input.PASSWORD = "toor";
 
 describe("RESTRouter class", function() {
+
+  after(() => rimraf.sync(__dirname + "/../models"));
 
   it("is instantiable and exposes simple databases as REST HTTP API", function(done) {
   	this.timeout(5000);
