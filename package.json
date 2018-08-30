@@ -1,11 +1,11 @@
 {
-  "name": "rest-router",
+  "name": "restrouter",
   "version": "1.0.0",
   "description": "RESTRouter can create HTTP REST APIs (for Express apps) from database credentials (using Sequelize ORM), and nothing else.",
   "directories": {
     "test": "test"
   },
-  "main": "src/rest-router.js",
+  "main": "src/restrouter.js",
   "dependencies": {
     "body-parser": "^1.18.3",
     "chai": "^4.1.2",
@@ -20,12 +20,14 @@
   "devDependencies": {
     "async": "^2.6.1",
     "mocha": "^5.2.0",
+    "nyc": "^13.0.1",
     "request": "^2.88.0"
   },
   "scripts": {
     "fix": "node fix.js",
     "clean": "rimraf test/models",
-    "docs": "javadoc -i src/rest-router.js -o README.md -f markdown",
+    "docs": "javadoc -i src/restrouter.js -o README.md -f markdown",
+    "coverage": "nyc --reporter=html mocha test/*.test.js",
     "test": "mocha test/**/*.test.js"
   },
   "keywords": [],
