@@ -54,6 +54,7 @@ rest
  .then(function(data) {
    const { rest, router, resources } = data;
    myExpressApp.use("/my/personal/api/v1", router);
+   myExpressApp.listen(8008, () => console.log("Server listening!"));
  })
  .catch(function(error) {
    console.error(error);

@@ -3,17 +3,18 @@ const async = require("async");
 const request = require("request");
 const http = require("http");
 const rimraf = require("rimraf");
-const input = {};
-input.DATABASE = "newdb";
-input.USER = "root";
-input.PASSWORD = "toor";
+const input = {
+  DATABASE: "newdb",
+  USER: "root",
+  PASSWORD: "toor"
+};
 
 describe("RESTRouter class", function() {
 
   after(() => rimraf.sync(__dirname + "/../models"));
 
   it("is instantiable and exposes simple databases as REST HTTP API", function(done) {
-  	this.timeout(5000);
+    this.timeout(5000);
     const executeTest = (done, app, server, rest) => {
 
       async.series({
@@ -69,8 +70,8 @@ describe("RESTRouter class", function() {
         rest.auto.sequelize.close();
         done(error, data);
       });
-    };
 
+    };
     const app = require("express")();
     const bodyParser = require("body-parser");
     const { RESTRouter } = require(__dirname + "/../src/rest-router.js");
