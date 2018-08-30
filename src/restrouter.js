@@ -1,6 +1,6 @@
 /**
  * 
- * # rest-router
+ * # restrouter
  * 
  * 
  * RESTRouter can create HTTP REST APIs (for Express apps) from database credentials (using Sequelize ORM), and nothing else.
@@ -11,7 +11,7 @@
  * 
  * ## 1. Installation
  * 
- * ~$ `npm install --save rest-router`
+ * ~$ `npm install --save @allnulled/restrouter`
  * 
  * ---
  * 
@@ -36,7 +36,7 @@
  * ### 3.1. Import `RESTRouter` class:
  * 
  * ```js
- * const RESTRouter = require("rest-router").RESTRouter;
+ * const RESTRouter = require("@allnulled/restrouter").RESTRouter;
  * ```
  * 
  * ### 3.2. Create a new `RESTRouter` instance, providing the credentials of your database:
@@ -80,7 +80,7 @@ const epilogue = require("epilogue");
  * 
  * ---
  * 
- * ### **`RESTRouter = require("rest-router").RESTRouter`**
+ * ### **`RESTRouter = require("restrouter").RESTRouter`**
  * 
  * @type `{Class}`
  * @description Class that has the ability to create Express.Router(s)

@@ -12,7 +12,7 @@ RESTRouter is a small tool to auto-generate REST APIs (for ExpressJS) automatica
 
 ## 1. Installation
 
-~$ `npm install --save restrouter`
+~$ `npm install --save @allnulled/restrouter`
 
 ---
 
@@ -37,7 +37,7 @@ This is important to know if you want to have a full knowledge about how this to
 ### 3.1. Import `RESTRouter` class:
 
 ```js
-const RESTRouter = require("restrouter").RESTRouter;
+const RESTRouter = require("@allnulled/restrouter").RESTRouter;
 ```
 
 ### 3.2. Create a new `RESTRouter` instance, providing the credentials of your database:
@@ -259,4 +259,3 @@ You are respectful with your own apetences. U LIKE IT? Cool! Cause that is the m
 
 
 
-# Read this file
