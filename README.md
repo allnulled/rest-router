@@ -12,7 +12,7 @@ SuperRestRouter is a small tool to auto-generate REST APIs (for ExpressJS) autom
 
 ## 1. Installation
 
-~$ `npm install --save @allnulled/super-rest-router`
+~$ `npm install --save super-rest-router`
 
 ---
 
@@ -37,7 +37,7 @@ This is important to know if you want to have a full knowledge about how this to
 ### 3.1. Import `SuperRestRouter` class:
 
 ```js
-const SuperRestRouter = require("@allnulled/super-rest-router").SuperRestRouter;
+const SuperRestRouter = require("super-rest-router").SuperRestRouter;
 ```
 
 ### 3.2. Create a new `SuperRestRouter` instance, providing the credentials of your database:

@@ -11,7 +11,7 @@
  * 
  * ## 1. Installation
  * 
- * ~$ `npm install --save @allnulled/super-rest-router`
+ * ~$ `npm install --save super-rest-router`
  * 
  * ---
  * 
@@ -36,7 +36,7 @@
  * ### 3.1. Import `SuperRestRouter` class:
  * 
  * ```js
- * const SuperRestRouter = require("@allnulled/super-rest-router").SuperRestRouter;
+ * const SuperRestRouter = require("super-rest-router").SuperRestRouter;
  * ```
  * 
  * ### 3.2. Create a new `SuperRestRouter` instance, providing the credentials of your database:
