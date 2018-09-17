@@ -259,12 +259,6 @@ module.exports = { SuperRestRouter };
  * 
  * SuperRestRouter is a simple tool, composed with a few lines of code.
  * 
- * But as I do not have still a job because in your society I am not welcome, 
- * 
- * I just want to... well. It is absolutely useless to tell you how nasty
- * 
- * it was to try to understand such a shitty society. It is all about greed.
- * 
- * All about being a slave for another mental slave.
+ * *‘Justice’ is to divide the resources by the necessity of them for them to sum the most utility in a goal achievement. When you want to apply it, it is up to you. But my question is: which goal is the yours?*
  * 
  */
