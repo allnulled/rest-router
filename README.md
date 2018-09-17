@@ -229,32 +229,15 @@ endpoints to transform your Sequelize models into a beautiful and handy HTTP RES
 
 ## 5. Conclusion
 
-SuperRestRouter is a simple tool, composed with a few lines of code, but it can take so much time of your development, that... well, you should better not use it.
+SuperRestRouter is a simple tool, composed with a few lines of code.
 
-Better for me, of course. Go fuck yourself, bastards.
+But as I do not have still a job because in your society I am not welcome, 
 
-Pray to Microsoft and Google. They could have done this shit decades before. But nope, it is more secure to let the human do the mechanical part.
+I just want to... well. It is absolutely useless to tell you how nasty
 
-Fuck you all. You are all INSANE.
+it was to try to understand such a shitty society. It is all about greed.
 
-And this is why: university has to be paid because you are not enough clever to understand how
-cheap and easy it would be to record all the classes once for a year, and upload the videos to Youtube.
-How cheap and easy it would be to pay once for the official books, and share them the rest of the times they are used.
-
-But you think that your society is normal.
-
-You are so stupid that your government is selling weapons to the terrorists, and you think it is normal.
-
-Yeah. So normal. So normal for an abnormal society like the yours.
-
-Please, listen. NaturalScript was not a joke, despite they (big companies) laught a lot at me.
-
-It was the starting point of a new civilization, a new one that is respectful with LOGIC.
-
-But this is not your case. 
-
-You are respectful with your own apetences. U LIKE IT? Cool! Cause that is the most important of the universe: that you liked it. Is it?
-
+All about being a slave for another mental slave.
 
 
 
